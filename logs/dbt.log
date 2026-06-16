@@ -1,0 +1,51 @@
+[0m12:34:41.935723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fe7461b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19ff23e450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fea10fb0>]}
+
+
+============================== 12:34:41.939681 | 96891378-361d-4e65-9926-6123891ae070 ==============================
+[0m12:34:41.939681 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:34:41.941250 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'debug': 'False', 'fail_fast': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'invocation_command': 'dbt init', 'no_print': 'None', 'profiles_dir': '/home/wrcor/.dbt', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'static_parser': 'True', 'introspect': 'True', 'version_check': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'log_path': 'logs', 'warn_error': 'None', 'empty': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_format': 'default'}
+[0m12:34:50.285972 [debug] [MainThread]: Starter project path: /home/wrcor/.venv/dbt/lib/python3.12/site-packages/dbt/include/starter_project
+[0m12:34:50.407298 [info ] [MainThread]: 
+Your new dbt project "dbt_example" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:34:50.408171 [info ] [MainThread]: Setting up your profile.
+[0m12:35:43.847854 [info ] [MainThread]: Profile dbt_example written to /home/wrcor/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:35:43.849987 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 62.31483, "process_in_blocks": "0", "process_kernel_time": 0.182669, "process_mem_max_rss": "223284", "process_out_blocks": "8", "process_user_time": 2.43184}
+[0m12:35:43.851800 [debug] [MainThread]: Command `dbt init` succeeded at 12:35:43.851638 after 62.32 seconds
+[0m12:35:43.853139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fe722840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19de811f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19dd639cd0>]}
+[0m12:35:43.854490 [debug] [MainThread]: Flushing usage events
+[0m12:35:44.445811 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:35:55.316476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ac1763860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ac10aa660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ac11ae8a0>]}
+
+
+============================== 12:35:55.319635 | dbff12cb-dc6b-4d94-9190-542253525609 ==============================
+[0m12:35:55.319635 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:35:55.321344 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'introspect': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/home/wrcor/.dbt', 'target_path': 'None', 'printer_width': '80', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'quiet': 'False', 'no_print': 'None', 'warn_error': 'None', 'version_check': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'log_format': 'default', 'log_cache_events': 'False'}
+[0m12:35:55.329610 [info ] [MainThread]: dbt version: 1.11.11
+[0m12:35:55.330967 [info ] [MainThread]: python version: 3.12.3
+[0m12:35:55.332074 [info ] [MainThread]: python path: /home/wrcor/.venv/dbt/bin/python3
+[0m12:35:55.333610 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m12:35:55.887860 [info ] [MainThread]: Using profiles dir at /home/wrcor/.dbt
+[0m12:35:55.889683 [info ] [MainThread]: Using profiles.yml file at /home/wrcor/.dbt/profiles.yml
+[0m12:35:55.891021 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/wrcor/dbt/dbt-example/dbt_project.yml
+[0m12:35:55.892388 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:35:55.893838 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.6323285, "process_in_blocks": "0", "process_kernel_time": 0.194221, "process_mem_max_rss": "223052", "process_out_blocks": "0", "process_user_time": 2.233547}
+[0m12:35:55.895753 [debug] [MainThread]: Command `dbt debug` failed at 12:35:55.895582 after 0.63 seconds
+[0m12:35:55.896943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ac1017440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a9b7edbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a9bbcede0>]}
+[0m12:35:55.898090 [debug] [MainThread]: Flushing usage events
+[0m12:35:56.481232 [debug] [MainThread]: An error was encountered while trying to flush usage events
